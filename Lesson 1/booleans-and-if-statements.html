@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans & if statements</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // The boolean data type can only have two values: true or false
+        // Types of comparison operators in boolean include: >- greater than, Less than-<, >= - greater than or equals to ,less than or equals to- <=,equals to- ===, !== - not equals to
+
+        //eg:
+        console.log(5 > 3); // true
+        console.log(5 < 3); // false
+        console.log(5 >= 3); // true
+        console.log(5 <= 3); // false
+        console.log(5 === 3); // false
+        console.log(5 !== 3); // true
+     
+        //Booleans have lower priority than math operators
+        //eg:
+        console.log(5 + 3 > 7); // true - it calculates 5 + 3 first the checks if the result is greater than 7
+        console.log(5 + 3 < 7); // false - it calculates 5 + 3 first the checks if the result is less than 7
+
+        //lets us write multiple groups of code then decide which one to run
+
+        if( false){
+            console.log("Cold");
+
+        }
+        else{
+            console.log("Hot");
+        }
+
+
+        let age =9;
+
+        if(age >= 18){
+            console.log('You are alowed to drive');
+        }
+        else{
+            console.log('You are not allowed to drive');
+        }
+
+        /* if the first conditon is only one then the cali brations are not needed  eg:
+        let age2 = 19;
+        if(age2 >= 18)
+            console.log('You are alowed to drive');
+        
+        else{
+            console.log('You are not allowed to drive');
+        }
+
+        //  if they are two conditons then the cali brations are needed  eg:
+        let age3 = 19;
+        if(age3 >= 18)
+            console.log('You are alowed to drive');
+            console.log('You are allowed to drive under supervision');
+        
+        else{
+            console.log('You are not allowed to drive');
+        } //- you will gvet an error because the brackets has two conditions
+
+        */
+
+
+        //else if statement
+
+        let age4 = 10;
+        if (age4 >= 18){
+            console.log('You are alowed to drive');
+        }
+        else if (age4 >=14){
+            console.log('You are allowed to drive under supervision');
+        }
+        else{
+            console.log('You are not allowed to drive');
+        }
+        
+    </script>
+</body>
+</html>m
